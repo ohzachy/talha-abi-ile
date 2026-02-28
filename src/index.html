@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yozgat Gezilmesi Gereken Yerler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Yozgat Gezilmesi Gereken Yerler</h1>
+        <p>Yozgat'ın Çamlığını keşfedin.</p>
+    </header>
+
+    <section id="harita-bolumu">
+        <h2>Harita</h2>
+        <div id="map"></div>
+    </section>
+
+    <section id="yozgat çamlığı">
+        <h2>Yozgat Çamlığı hakkında</h2>
+        <p> Yozgat Çamlığı Milli Parkı 1958 yılında ülkemizin ilk milli parkı olarak ilan edilmiştir. 266,9 hektarlık alana sahip milli parkın ana kaynak değerini Anadolu Karaçamı (Pinus nigra subsp. pallasiana) oluşturmaktadır. Yozgat Çamlığı Milli Parkı içerisindeki bitki türleri  43 familya ve 144 cins  içinde toplanmıştır. Ayrıca  Milli Park içerisinde  doğal olarak bulunan hayvan türleri; kaya kartalı, kızıl şahin, atmaca, arı kuşu, ardıç kuşu, kargalar, serçe, tepeli toygar gibi kuşlar, kurt, domuz, tavşan, tilki ve sansar gibi türler görülmektedir. Yozgat Çamlığı Milli Parkı sahip olduğu 5 asırlık doğal ağaçlarıyla, yıllarca yerel halk tarafından kullanılmış kar kuyuları kültürel kaynak değerleri ile bilimsel amaçlı araştırmalara olanak sağlayan, insanların eğlenmelerine, dinlenmelerine ve kısa süreli tatil yapabilecekleri, dağ ve vadi peyzajlarının bütünleştiği doğal kaynak değerlerinin yanında, eğlence ve dinlence tesisleriyle rekreasyonel kullanım taleplerini karşılayacak kültürel ve rekreasyonel kaynak değerlerine de sahiptir. Yozgat Çamlığı Milli Parkı’nda mutlak koruma zonu içerisinde yaşının yaklaşık 455 olduğu tespit edilen ve tarihe şahitlik etmiş karaçam ağacı bulunmaktadır.
+      Milli park içerisinde bulunan ve hizmet verilen yapı ve tesisler;
+      İdari Ziyaretçi Tanıtım Merkezi
+      Tabiat Eğitim Merkezi
+      Otel
+      Futbol sahası
+      Mescitler
+      Kır lokantası
+      Kafeterya
+     Seyir terasları 
+     Çocuk oyun grupları
+     Çeşmeler
+     Büfe
+     Spor alanları
+    Günübirlik kullanım alanları
+     Yürüyüş Parkurları
+     Bisiklet yolları
+     Dağ bisiklet parkuru
+     Kar kuyuları 
+     WC’ler
+     Otoparklar </p>
+        <img src="resim.jpeg" alt="Yozgat Çamlığı">
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yozgat Çamlığı Tanıtım Sitesi</p>
+    </footer>
+
+    <!-- Leaflet CSS ve JavaScript dosyalarını ekleyin -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        // Harita oluşturma
+        var map = L.map('map').setView([39.8270, 30.5678], 13); // Şefaatli'nin koordinatları (yaklaşık)
+
+        // OpenStreetMap tile sağlayıcısı
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // İşaretleyici ekleme (isteğe bağlı)
+        var marker = L.marker([39.811911, 34.806412]).addTo(map); // Şefaatli'nin koordinatları
+        marker.bindPopup("Yozgat çamlığı").openPopup();
+    </script>
+</body>
+</html>

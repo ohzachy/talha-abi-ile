@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#harita-bolumu {
+    padding: 1em;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#kaya-mezarlari-detaylari {
+    padding: 1em;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Kaya Mezarları Hakkında bölümüne stil ekleme */
+.kaya-mezarlari-detaylari {
+  margin-top: 20px; /* Üstten biraz boşluk bırakır */
+  padding: 1em;
+  background-color: white;
+  border: 1px solid #ddd; /* Kenarlık ekler (isteğe bağlı) */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge ekler (isteğe bağlı) */
+}
+
+/* Başlıkları daha belirgin hale getirme */
+h2 {
+    margin-top: 1.5em;
+}
