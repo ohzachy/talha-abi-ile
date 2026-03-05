@@ -16,7 +16,7 @@ export default function EcoBadgePage() {
 
     // Sayfa yüklendiğinde LocalStorage'dan görevleri al
     useEffect(() => {
-        const savedTasks = localStorage.getItem('gencbizz_eco_tasks');
+        const savedTasks = localStorage.getItem('scantravel_eco_tasks');
         if (savedTasks) {
             const parsed = JSON.parse(savedTasks);
             setTasks(parsed);
@@ -29,7 +29,7 @@ export default function EcoBadgePage() {
             task.id === id ? { ...task, completed: !task.completed } : task
         );
         setTasks(newTasks);
-        localStorage.setItem('gencbizz_eco_tasks', JSON.stringify(newTasks));
+        localStorage.setItem('scantravel_eco_tasks', JSON.stringify(newTasks));
         checkBadge(newTasks);
     };
 
@@ -54,7 +54,7 @@ export default function EcoBadgePage() {
                         Çevre Dostu Rozeti
                     </h1>
                     <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        Doğaya saygılı bir turist olarak aşağıdaki görevleri tamamlayın ve GençBizz Çevre Dostu Kullanıcı Rozeti'nin sahibi olun!
+                        Doğaya saygılı bir turist olarak aşağıdaki görevleri tamamlayın ve Scan&Travel Çevre Dostu Kullanıcı Rozeti'nin sahibi olun!
                     </p>
                 </div>
 

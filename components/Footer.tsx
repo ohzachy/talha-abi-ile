@@ -16,7 +16,7 @@ export default function Footer() {
                             <div className="bg-emerald-500 text-white p-1.5 rounded-lg">
                                 <Leaf className="w-5 h-5" />
                             </div>
-                            <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white">GençBizz</span>
+                            <span className="self-center text-xl font-bold whitespace-nowrap dark:text-white">Scan&Travel</span>
                         </Link>
                         <p className="mt-4 text-sm text-slate-500 dark:text-slate-400 max-w-xs">
                             Yozgat'ın tarihi dokusunu ve doğal güzelliklerini keşfet. Doğa ile dost bir turizm için bize katıl.
@@ -47,7 +47,7 @@ export default function Footer() {
                 <hr className="my-6 border-slate-200 sm:mx-auto dark:border-slate-800 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-slate-500 sm:text-center dark:text-slate-400">
-                        © {new Date().getFullYear()} <Link href="/" className="hover:underline">GençBizz Yozgat™</Link>. Tüm Hakları Saklıdır.
+                        © {new Date().getFullYear()} <Link href="/" className="hover:underline">Scan&Travel™</Link>. Tüm Hakları Saklıdır.
                     </span>
                 </div>
             </div>

@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'GençBizz Yozgat Rehberi',
+  title: 'Scan&Travel Yozgat Rehberi',
   description: 'Yozgat\'ı keşfetmek için en iyi rehber.',
 };
 

@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-            GençBizz, Yozgat'ı teknoloji ile harmanlayarak sizlere sunan yenilikçi bir turist rehberidir. Çevre dostu rozetlerle doğayı koruyun, harika mekanları sesli dinleyerek gezin.
+            Scan&Travel, Yozgat'ı teknoloji ile harmanlayarak sizlere sunan yenilikçi bir turist rehberidir. Çevre dostu rozetlerle doğayı koruyun, harika mekanları sesli dinleyerek gezin.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -59,11 +59,11 @@ export default function Home() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 text-emerald-500 font-semibold tracking-wide uppercase text-sm">
                 <Leaf className="w-5 h-5" />
-                GençBizz Nedir?
+                Scan&Travel Nedir?
               </div>
               <h2 className="text-3xl md:text-4xl font-bold">Teknoloji ve Turizmin Buluşma Noktası</h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-                GençBizz, Yozgat'ın tarihi ve turistik mekanlarını dijitalleştirerek erişilebilir kılan, çok dilli bir rehber platformudur.
+                Scan&Travel, Yozgat'ın tarihi ve turistik mekanlarını dijitalleştirerek erişilebilir kılan, çok dilli bir rehber platformudur.
                 Amacımız, şehrimizin kültürel mirasını modern arayüzler ve etkileşimli özellikler (360 derece haritalar, akıllı lokasyon takibi, sesli okuma) ile hem yerli hem de yabancı turistlere en iyi şekilde sunmaktır.
               </p>
             </div>

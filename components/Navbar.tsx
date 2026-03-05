@@ -29,12 +29,17 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4 px-6 lg:px-12">
 
                 {/* Logo */}
-                <Link href="/" className="flex items-center space-x-2 group">
-                    <div className="bg-emerald-500 text-white p-2 rounded-xl group-hover:scale-110 transition-transform">
-                        <Leaf className="w-5 h-5" />
-                    </div>
-                    <span className="self-center text-2xl font-bold whitespace-nowrap text-slate-900 dark:text-white">GençBizz</span>
-                </Link>
+                <div className="flex items-center gap-4">
+                    <Link href="/" className="flex items-center space-x-2 group">
+                        <div className="bg-emerald-500 text-white p-2 rounded-xl group-hover:scale-110 transition-transform">
+                            <Leaf className="w-5 h-5" />
+                        </div>
+                        <span className="self-center text-2xl font-bold whitespace-nowrap text-slate-900 dark:text-white">Scan&Travel</span>
+                    </Link>
+                    <span className="hidden md:inline-flex items-center rounded-md bg-amber-50 px-2 py-1 text-xs font-medium text-amber-800 ring-1 ring-inset ring-amber-600/20 dark:bg-amber-900/30 dark:text-amber-500 dark:ring-amber-500/20">
+                        Yapım Aşamasında
+                    </span>
+                </div>
 
                 {/* Desktop Links & Actions */}
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
